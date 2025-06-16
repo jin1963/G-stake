@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>G3X24 Lydia Clone Staking</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: linear-gradient(#2c003e, #63008f); color: white; text-align: center; padding: 30px; }
+        .container { background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; display: inline-block; }
+        input, select, button { margin: 5px; padding: 10px; border-radius: 5px; font-size: 16px; border: none; }
+        button { background-color: gold; color: black; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>G3X24 Lydia Clone Staking</h1>
+        <button id="connectButton">Connect Wallet</button>
+        <p>Wallet: <span id="walletAddress"></span></p>
+
+        <input type="number" id="amountInput" placeholder="Amount to stake">
+        <button id="stakeButton">Stake</button>
+
+        <h2>Manage Stake</h2>
+        <button id="claimButton">Claim Reward</button>
+        <button id="unstakeButton">Unstake</button>
+
+        <p id="statusText"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
+    <script src="abi.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
